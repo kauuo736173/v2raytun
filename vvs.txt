@@ -1,4 +1,4 @@
-#profile-title: base64:VPN
+#profile-title: base64:VlBO
 #profile-update-interval: 1
 #subscription-userinfo: upload=0; download=0; total=0; expire=0
 #support-url: wa.me/+79635990412
