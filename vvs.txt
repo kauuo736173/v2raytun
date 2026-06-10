@@ -20,4 +20,4 @@
 #announce:Статус подписки: ❌ Не активна | 📲 +79635990412 | Антизаглушки расходуют больше трафика используйте только когда глушат связь❗️| Перепродажу ключа делаю харамом ❗️
 
 
-vless://d9ad20ce-4b05-432c-a0a5-0287b0d48f87@31.177.111.178:443?encryption=none&flow=&type=grpc&mode=gun&serviceName=grpc&authority=&security=reality&fp=chrome&sni=5post-gate.x5.ru&pbk=gETV15JkIgc_-i8Yn8OwL2923FmbwDIoe08FBHEp-yE#🇪🇺 N
+vless://db50bff0-0752-4ee8-abfa-c0d827d5e6b1@fra.pandaonline.org:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=fra.pandaonline.org&pbk=t_UyYJCXeQjHMYh0fnK6SinlQ5vkeVy-8yKrkUgVNEE#Non active
