@@ -30,3 +30,1354 @@ vless://c260c0ca-eeeb-4db9-ab4b-1401adfce7b1@89.169.38.249.blanesik.space:443?en
 vless://c260c0ca-eeeb-4db9-ab4b-1401adfce7b1@5.188.114.44:443?encryption=none&flow=&type=grpc&mode=gun&serviceName=/sequre/grpc/&authority=&security=tls&fp=edge&sni=95.85.246.16.speed-storage.ru&alpn=h2#🇪🇺 AUTO — Обход глушилок 
 vless://ad29d3d2-1216-41a6-b36f-f4c4e7854311@185.91.54.46:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=edge&sni=smartcaptcha.yandexcloud.net&pbk=vgECJ1J0IOIrxpnh7Pu7nhy2wJ_RJWq5wp_5sxp-3Bk&sid=9db07670a7b491cb#🇪🇺 Антизаглушка — 1
 vless://56bc8a5d-2490-4eb5-b787-a5de79c9ea32@lt-cherry-01.com:8443?encryption=none&flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=firefox&sni=storage.yandex.net&pbk=L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA&sid=2cfb5a0ae8ab0cb0#🇪🇺 Антизаглушка — 2
+{
+  "dns" : {
+    "queryStrategy" : "UseIPv4",
+    "servers" : [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
+  },
+  "inbounds" : [
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10808,
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled" : true
+      },
+      "tag" : "socks"
+    }
+  ],
+  "log" : {
+    "access" : "\/private\/var\/mobile\/Containers\/Shared\/AppGroup\/F4A89442-C222-4323-8E11-7FF95FFC77D7\/Library\/Application Support\/Xray\/logs\/access.log",
+    "dnsLog" : true,
+    "loglevel" : "Warning"
+  },
+  "meta" : null,
+  "outbounds" : [
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "5.188.114.44",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "grpcSettings" : {
+          "multiMode" : false,
+          "serviceName" : "\/sequre\/grpc\/"
+        },
+        "network" : "grpc",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "h2"
+          ],
+          "fingerprint" : "edge",
+          "serverName" : "95.85.246.16.speed-storage.ru"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 1"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "84.201.166.160",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "grpcSettings" : {
+          "multiMode" : false,
+          "serviceName" : "\/sequre\/grpc\/"
+        },
+        "network" : "grpc",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "h2"
+          ],
+          "fingerprint" : "edge",
+          "serverName" : "95.85.246.14.speed-storage.ru"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 2"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s1.whitelists-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "edge",
+          "serverName" : "cloudflare.vhub.pro"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.vhub.pro"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 3"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s1.whitelists-avoro-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "safari",
+          "serverName" : "cloudflare.blanesik.space"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.blanesik.space"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 4"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s2.whitelists-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "edge",
+          "serverName" : "cloudflare.vhub.pro"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.vhub.pro"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 5"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s2.whitelists-avoro-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "cloudflare.blanesik.space"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.blanesik.space"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 6"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s3.whitelists-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "cloudflare.vhub.pro"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.vhub.pro"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 7"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s3.whitelists-avoro-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "edge",
+          "serverName" : "cloudflare.blanesik.space"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.blanesik.space"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 8"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s4.whitelists-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "safari",
+          "serverName" : "cloudflare.vhub.pro"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.vhub.pro"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 9"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s4.whitelists-avoro-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "cloudflare.blanesik.space"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.blanesik.space"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 10"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s5.whitelists-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "cloudflare.vhub.pro"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.vhub.pro"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 11"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s5.whitelists-avoro-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "cloudflare.blanesik.space"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.blanesik.space"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 12"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "njivxdsw19.a.trbcdn.net",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "xhttp",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "h2",
+            "http\/1.1"
+          ],
+          "fingerprint" : "edge",
+          "serverName" : "njivxdsw19.a.trbcdn.net"
+        },
+        "xhttpSettings" : {
+          "extra" : {
+            "headers" : {
+              "accept" : "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7",
+              "accept-encoding" : "gzip,+deflate,+br,+zstd",
+              "accept-language" : "en-US,en;q=0.9",
+              "priority" : "u=0,+i",
+              "sec-ch-ua" : "Not\/A)Brand;v=99,+Chromium;v=148",
+              "sec-ch-ua-arch" : "x86",
+              "sec-ch-ua-bitness" : "64",
+              "sec-ch-ua-full-version" : "148.0.7778.167",
+              "sec-ch-ua-full-version-list" : "Not\/A)Brand;v=99.0.0.0,+Chromium;v=148.0.7778.167",
+              "sec-ch-ua-mobile" : "?0",
+              "sec-ch-ua-model" : "",
+              "sec-ch-ua-platform" : "Linux",
+              "sec-ch-ua-platform-version" : "",
+              "sec-fetch-dest" : "document",
+              "sec-fetch-mode" : "navigate",
+              "sec-fetch-site" : "same-origin",
+              "sec-fetch-user" : "?1",
+              "upgrade-insecure-requests" : "1",
+              "user-agent" : "Mozilla\/5.0+(X11;+Linux+x86_64)+AppleWebKit\/537.36+(KHTML,+like+Gecko)+Chrome\/148.0.0.0+Safari\/537.36"
+            },
+            "noGRPCHeader" : true,
+            "seqKey" : "X-Content-Id",
+            "seqPlacement" : "header",
+            "sessionKey" : "X-Session-Id",
+            "sessionPlacement" : "header",
+            "uplinkHTTPMethod" : "GET",
+            "xmux" : {
+              "cMaxLifetimeMs" : 300000,
+              "cMaxReuseTimes" : 100,
+              "maxConcurrency" : "16-32",
+              "maxConnections" : 0
+            },
+            "xPaddingHeader" : "X-Api-Key",
+            "xPaddingMethod" : "tokenish",
+            "xPaddingObfsMode" : true,
+            "xPaddingPlacement" : "header"
+          },
+          "host" : "njivxdsw19.a.trbcdn.net",
+          "mode" : "packet-up",
+          "path" : "\/sequre\/http\/"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 13"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "188.72.103.3",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "ece5d20d-9e40-4bf9-b35d-b6bd2c9ea1b7"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "xhttp",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "serverName" : "cdn.tracker.yandex.net"
+        },
+        "xhttpSettings" : {
+          "extra" : {
+            "noSSEHeader" : false,
+            "scMaxBufferedPosts" : 30,
+            "scMaxEachPostBytes" : "1000000",
+            "scStreamUpServerSecs" : "20-80",
+            "seqKey" : "",
+            "seqPlacement" : "",
+            "sessionKey" : "",
+            "sessionPlacement" : "",
+            "uplinkChunkSize" : 0,
+            "uplinkDataKey" : "",
+            "uplinkDataPlacement" : "",
+            "uplinkHTTPMethod" : "GET",
+            "xPaddingBytes" : "0-0",
+            "xPaddingHeader" : "",
+            "xPaddingKey" : "",
+            "xPaddingMethod" : "",
+            "xPaddingObfsMode" : false,
+            "xPaddingPlacement" : ""
+          },
+          "host" : "static171.kdjdjssjwiqwr.ru",
+          "mode" : "packet-up",
+          "path" : "\/livestreamcontent\/"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 14"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "nl01-cherry.online",
+            "port" : 8443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "ece5d20d-9e40-4bf9-b35d-b6bd2c9ea1b7"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo",
+          "serverName" : "storage.yandex.net",
+          "shortId" : "0905b6e16602f326",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 15"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "fr-gt-01.com",
+            "port" : 8443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "b0951d03-a838-4953-9d25-f906fbc4232b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA",
+          "serverName" : "storage.yandex.net",
+          "shortId" : "ece180c605b5453c",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 16"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "fr-gt-01.com",
+            "port" : 8443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "b0951d03-a838-4953-9d25-f906fbc4232b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA",
+          "serverName" : "storage.yandex.net",
+          "shortId" : "ece180c605b5453c",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 17"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "pl-dp-01.online",
+            "port" : 8443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "1c4d05ef-8421-46a1-a6f3-e77f0ea45e41"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "9Y-_jCI3Z1x6SXK2tHdZ6V1CN9IJPNPnoxSW0cbXxD8",
+          "serverName" : "storage.yandex.net",
+          "shortId" : "50e09046c0c00159",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 18"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "fi-m247-02.com",
+            "port" : 8443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "d9903876-7627-486b-813f-aeb6737725b4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "66-fz0xjwauydj29EfFKyPHjJ2CIGaGSsJ6hsB--zAc",
+          "serverName" : "storage.yandex.net",
+          "shortId" : "6ecdb111a4e57f94",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 19"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "188.72.103.3",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "ece5d20d-9e40-4bf9-b35d-b6bd2c9ea1b7"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "xhttp",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "serverName" : "cdn.tracker.yandex.net"
+        },
+        "xhttpSettings" : {
+          "extra" : {
+            "noSSEHeader" : false,
+            "scMaxBufferedPosts" : 30,
+            "scMaxEachPostBytes" : "1000000",
+            "scStreamUpServerSecs" : "20-80",
+            "seqKey" : "",
+            "seqPlacement" : "",
+            "sessionKey" : "",
+            "sessionPlacement" : "",
+            "uplinkChunkSize" : 0,
+            "uplinkDataKey" : "",
+            "uplinkDataPlacement" : "",
+            "uplinkHTTPMethod" : "GET",
+            "xPaddingBytes" : "0-0",
+            "xPaddingHeader" : "",
+            "xPaddingKey" : "",
+            "xPaddingMethod" : "",
+            "xPaddingObfsMode" : false,
+            "xPaddingPlacement" : ""
+          },
+          "host" : "static171.kdjdjssjwiqwr.ru",
+          "mode" : "packet-up",
+          "path" : "\/livestreamcontent\/"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 20"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "fr-gt-01.com",
+            "port" : 8443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "b0951d03-a838-4953-9d25-f906fbc4232b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA",
+          "serverName" : "storage.yandex.net",
+          "shortId" : "ece180c605b5453c",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 21"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "nuxde.jojack.ru",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "de7e5d34-7c58-49a8-8440-05a8d4877cf7"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "serverName" : "patents.su",
+          "shortId" : "428ef87fd47a3a32",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 22"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "tralalero.site",
+            "port" : 8443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "7a3a528f-2732-4292-8bd0-b1ad47fb513e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM",
+          "serverName" : "bitrix24.ru",
+          "shortId" : "4ffc99daad0f261f",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 23"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "fi-m247-02.com",
+            "port" : 8443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "9c2aec33-963e-491e-94f7-d19d72ebf287"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "66-fz0xjwauydj29EfFKyPHjJ2CIGaGSsJ6hsB--zAc",
+          "serverName" : "storage.yandex.net",
+          "shortId" : "de8d3223e7d85761",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 24"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "fi-m247-02.com",
+            "port" : 8443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "9c2aec33-963e-491e-94f7-d19d72ebf287"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "66-fz0xjwauydj29EfFKyPHjJ2CIGaGSsJ6hsB--zAc",
+          "serverName" : "storage.yandex.net",
+          "shortId" : "de8d3223e7d85761",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 25"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "tralalero.site",
+            "port" : 8443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "7a3a528f-2732-4292-8bd0-b1ad47fb513e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM",
+          "serverName" : "bitrix24.ru",
+          "shortId" : "4ffc99daad0f261f",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 26"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "pl-dp-01.online",
+            "port" : 8443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "3699cf3a-2cc3-462a-be38-51fff7c8fb8d"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "9Y-_jCI3Z1x6SXK2tHdZ6V1CN9IJPNPnoxSW0cbXxD8",
+          "serverName" : "storage.yandex.net",
+          "shortId" : "50e09046c0c00159",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 27"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "185.253.23.125",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "2abb9476-a1ed-4ca6-afa3-7eb04e824c0f"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1",
+            "h2"
+          ],
+          "fingerprint" : "firefox",
+          "serverName" : "cdn5.bypasshape.ru"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 28"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "nuxde.jojack.ru",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "de7e5d34-7c58-49a8-8440-05a8d4877cf7"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "serverName" : "patents.su",
+          "shortId" : "428ef87fd47a3a32",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 29"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "217.16.19.13",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "c7661851-1449-47de-b444-ecc508e8d0ac"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "qq",
+          "publicKey" : "mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4",
+          "serverName" : "yandex.ru",
+          "shortId" : "ad7dab462a323acb",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 30"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "cy.keepverify.net",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "c7661851-1449-47de-b444-ecc508e8d0ac"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "grpcSettings" : {
+          "multiMode" : false,
+          "serviceName" : "buysec.ru"
+        },
+        "network" : "grpc",
+        "realitySettings" : {
+          "fingerprint" : "chrome",
+          "publicKey" : "J07yFEBPsic7-hLTS2KSxVqI7v4gpfkG6_a2cGKNVFk",
+          "serverName" : "cdn.kwork.com",
+          "shortId" : "10f786a2491b2cd5",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 31"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "ruall.archivebox.tools",
+            "port" : 971,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "c7661851-1449-47de-b444-ecc508e8d0ac"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "qq",
+          "publicKey" : "mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4",
+          "serverName" : "platform-api.max.ru",
+          "shortId" : "ad7dab462a323acb",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 32"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "217.16.16.1",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "c7661851-1449-47de-b444-ecc508e8d0ac"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "qq",
+          "publicKey" : "mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4",
+          "serverName" : "ads.x5.ru",
+          "shortId" : "ad7dab462a323acb",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 33"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "top2156289056.mwscdn.ru",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "cef6ad99-5f1c-4f3c-b446-403dc1b6d577"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "xhttp",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "fingerprint" : "chrome",
+          "serverName" : "top2156289056.mwscdn.ru"
+        },
+        "xhttpSettings" : {
+          "host" : "",
+          "mode" : "auto",
+          "path" : "\/api\/hel"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 34"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "78.159.250.196",
+            "port" : 2053,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "cef6ad99-5f1c-4f3c-b446-403dc1b6d577"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "chrome",
+          "publicKey" : "6nsVaGZyZOiD9A0Rd9ci-r-7PO_i2ZP5kPK-0orxdS4",
+          "serverName" : "max.ru",
+          "shortId" : "aabb",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 35"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "78.159.250.196",
+            "port" : 20447,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "cef6ad99-5f1c-4f3c-b446-403dc1b6d577"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "chrome",
+          "publicKey" : "xBpyo1hUqSIC_DjeVuTDN1EqAsTnFNJPDgBoJZ79clw",
+          "serverName" : "max.ru",
+          "shortId" : "aabb",
+          "spiderX" : ""
+        },
+        "security" : "reality"
+      },
+      "tag" : "🇪🇺 AUTO — Обход БС 36"
+    },
+    {
+      "protocol" : "freedom",
+      "settings" : {
+        "domainStrategy" : "UseIP"
+      },
+      "tag" : "direct"
+    },
+    {
+      "protocol" : "blackhole",
+      "settings" : {
+        "response" : {
+          "type" : "http"
+        }
+      },
+      "tag" : "block"
+    }
+  ],
+  "remarks" : "🇪🇺 AUTO — Обход БС",
+  "routing" : {
+    "balancers" : [
+      {
+        "selector" : [
+          "🇪🇺 AUTO — Обход БС 1",
+          "🇪🇺 AUTO — Обход БС 2",
+          "🇪🇺 AUTO — Обход БС 3",
+          "🇪🇺 AUTO — Обход БС 4",
+          "🇪🇺 AUTO — Обход БС 5",
+          "🇪🇺 AUTO — Обход БС 6",
+          "🇪🇺 AUTO — Обход БС 7",
+          "🇪🇺 AUTO — Обход БС 8",
+          "🇪🇺 AUTO — Обход БС 9",
+          "🇪🇺 AUTO — Обход БС 10",
+          "🇪🇺 AUTO — Обход БС 11",
+          "🇪🇺 AUTO — Обход БС 12",
+          "🇪🇺 AUTO — Обход БС 13",
+          "🇪🇺 AUTO — Обход БС 14",
+          "🇪🇺 AUTO — Обход БС 15",
+          "🇪🇺 AUTO — Обход БС 16",
+          "🇪🇺 AUTO — Обход БС 17",
+          "🇪🇺 AUTO — Обход БС 18",
+          "🇪🇺 AUTO — Обход БС 19",
+          "🇪🇺 AUTO — Обход БС 20",
+          "🇪🇺 AUTO — Обход БС 21",
+          "🇪🇺 AUTO — Обход БС 22",
+          "🇪🇺 AUTO — Обход БС 23",
+          "🇪🇺 AUTO — Обход БС 24",
+          "🇪🇺 AUTO — Обход БС 25",
+          "🇪🇺 AUTO — Обход БС 26",
+          "🇪🇺 AUTO — Обход БС 27",
+          "🇪🇺 AUTO — Обход БС 28",
+          "🇪🇺 AUTO — Обход БС 29",
+          "🇪🇺 AUTO — Обход БС 30",
+          "🇪🇺 AUTO — Обход БС 31",
+          "🇪🇺 AUTO — Обход БС 32",
+          "🇪🇺 AUTO — Обход БС 33",
+          "🇪🇺 AUTO — Обход БС 34",
+          "🇪🇺 AUTO — Обход БС 35",
+          "🇪🇺 AUTO — Обход БС 36"
+        ],
+        "tag" : "balancer"
+      }
+    ],
+    "domainStrategy" : "IPIfNonMatch",
+    "rules" : [
+      {
+        "balancerTag" : "balancer",
+        "inboundTag" : [
+          "socks"
+        ],
+        "port" : "0-65535"
+      }
+    ]
+  }
+}
