@@ -1,3 +1,24 @@
+#profile-title: base64:VlBO
+#profile-update-interval: 1
+#subscription-userinfo: upload=0; download=0; total=0; expire=0
+#support-url: wa.me/+79635990412
+
+#profile-test-interval: 300
+
+#profile-auto-switch: true
+
+#profile-allow-copy: false
+
+#profile-locked: true
+
+#profile-read-only: true
+
+#profile-prefer-ipv4: true
+
+#auto-continue: true
+
+#announce:Статус подписки: ✅ Активна | 📲 +79635990412 | Антизаглушки расходуют больше трафика используйте только когда глушат связь❗️| Перепродажу ключа делаю харамом ❗️
+
 {
   "dns" : {
     "disableCache" : false,
