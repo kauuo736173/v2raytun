@@ -1,0 +1,790 @@
+{
+  "dns" : {
+    "queryStrategy" : "UseIPv4",
+    "servers" : [
+      "1.1.1.1",
+      "1.0.0.1"
+    ]
+  },
+  "inbounds" : [
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10808,
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled" : true
+      },
+      "tag" : "socks"
+    }
+  ],
+  "log" : {
+    "access" : "\/private\/var\/mobile\/Containers\/Shared\/AppGroup\/F4A89442-C222-4323-8E11-7FF95FFC77D7\/Library\/Application Support\/Xray\/logs\/access.log",
+    "dnsLog" : true,
+    "loglevel" : "Warning"
+  },
+  "meta" : null,
+  "outbounds" : [
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "194.238.79.150.fwqfw783rg2dad.website",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "h2"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "194.238.79.150.fwqfw783rg2dad.website"
+        },
+        "wsSettings" : {
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 1"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s1.cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "safari",
+          "serverName" : "cloudflare.vhub.pro"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.vhub.pro"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 2"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s1.avoro-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "cloudflare.blanesik.space"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.blanesik.space"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 3"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s2.cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "cloudflare.vhub.pro"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.vhub.pro"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 4"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s2.avoro-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "cloudflare.blanesik.space"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.blanesik.space"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 5"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s3.cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "edge",
+          "serverName" : "cloudflare.vhub.pro"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.vhub.pro"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 6"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s3.avoro-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "cloudflare.blanesik.space"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.blanesik.space"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 7"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s4.cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "edge",
+          "serverName" : "cloudflare.vhub.pro"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.vhub.pro"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 8"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s4.avoro-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "safari",
+          "serverName" : "cloudflare.blanesik.space"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.blanesik.space"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 9"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s5.cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "safari",
+          "serverName" : "cloudflare.vhub.pro"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.vhub.pro"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 10"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "s5.avoro-cloudflare.ips-list.vhub.pro",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "safari",
+          "serverName" : "cloudflare.blanesik.space"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "cloudflare.blanesik.space"
+          },
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 11"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "213.21.222.19.blanesik.space",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "grpcSettings" : {
+          "multiMode" : false,
+          "serviceName" : "\/sequre\/grpc"
+        },
+        "network" : "grpc",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "h2"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "213.21.222.19.blanesik.space"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 12"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "213.21.222.29.fwqfw783rg2dad.website",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "213.21.222.29.fwqfw783rg2dad.website"
+        },
+        "wsSettings" : {
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 13"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "213.21.222.27.tyr-agentstvo.tech",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "grpcSettings" : {
+          "multiMode" : false,
+          "serviceName" : "\/sequre\/grpc"
+        },
+        "network" : "grpc",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "h2"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "213.21.222.27.tyr-agentstvo.tech"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 14"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "213.21.222.28.speed-storage.ru",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "213.21.222.28.speed-storage.ru"
+        },
+        "wsSettings" : {
+          "path" : "\/sequre\/ws?ed=2560"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 15"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "213.21.222.33.vhubtest.ru",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "grpcSettings" : {
+          "multiMode" : false,
+          "serviceName" : "\/sequre\/grpc"
+        },
+        "network" : "grpc",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "h2"
+          ],
+          "fingerprint" : "ios",
+          "serverName" : "213.21.222.33.vhubtest.ru"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 16"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "94.183.221.225.blanesik.space",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "grpcSettings" : {
+          "multiMode" : false,
+          "serviceName" : "\/sequre\/grpc"
+        },
+        "network" : "grpc",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "h2"
+          ],
+          "fingerprint" : "edge",
+          "serverName" : "94.183.221.225.blanesik.space"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 17"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "95.85.246.14.speed-storage.ru",
+            "port" : 573,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "grpcSettings" : {
+          "multiMode" : false,
+          "serviceName" : "\/sequre\/grpc\/"
+        },
+        "network" : "grpc",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "h2"
+          ],
+          "fingerprint" : "edge",
+          "serverName" : "95.85.246.14.speed-storage.ru"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 18"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "95.85.246.16.speed-storage.ru",
+            "port" : 573,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "grpcSettings" : {
+          "multiMode" : false,
+          "serviceName" : "\/sequre\/grpc\/"
+        },
+        "network" : "grpc",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "h2"
+          ],
+          "fingerprint" : "edge",
+          "serverName" : "95.85.246.16.speed-storage.ru"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 19"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "89.125.118.171.blanesik.space",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "15fc02f9-dadd-49fa-a259-baec0ee71339"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "grpcSettings" : {
+          "multiMode" : false,
+          "serviceName" : "\/sequre\/grpc"
+        },
+        "network" : "grpc",
+        "security" : "tls",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "h2"
+          ],
+          "fingerprint" : "safari",
+          "serverName" : "89.125.118.171.blanesik.space"
+        }
+      },
+      "tag" : "🇪🇺 AUTO — Самый быстрый ⚡️ 20"
+    },
+    {
+      "protocol" : "freedom",
+      "settings" : {
+        "domainStrategy" : "UseIP"
+      },
+      "tag" : "direct"
+    },
+    {
+      "protocol" : "blackhole",
+      "settings" : {
+        "response" : {
+          "type" : "http"
+        }
+      },
+      "tag" : "block"
+    }
+  ],
+  "remarks" : "🇪🇺 AUTO — Самый быстрый ⚡️",
+  "routing" : {
+    "balancers" : [
+      {
+        "selector" : [
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 1",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 2",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 3",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 4",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 5",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 6",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 7",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 8",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 9",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 10",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 11",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 12",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 13",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 14",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 15",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 16",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 17",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 18",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 19",
+          "🇪🇺 AUTO — Самый быстрый ⚡️ 20"
+        ],
+        "tag" : "balancer"
+      }
+    ],
+    "domainStrategy" : "IPIfNonMatch",
+    "rules" : [
+      {
+        "balancerTag" : "balancer",
+        "inboundTag" : [
+          "socks"
+        ],
+        "port" : "0-65535"
+      }
+    ]
+  }
+}
