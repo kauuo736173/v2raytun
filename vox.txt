@@ -32,6 +32,5 @@ vless://06e57b4b-d228-4ff3-a6fc-b1682fd47de8@31.56.188.67:7443?flow=xtls-rprx-vi
 vless://c260c0ca-eeeb-5345-ab4b-1401adfce7b1@194.238.79.170.blanesik.space:443?encryption=none&flow=&type=ws&path=/sequre/ws?ed%3D2560&security=tls&fp=ios&sni=194.238.79.170.blanesik.space&alpn=http/1.1&mux=16#🇸🇪 Швеция
 vless://06e57b4b-d228-4ff3-a6fc-b1682fd47de8@stream.oneoneok.com:443?type=grpc&security=reality&fp=firefox&sni=stream.oneoneok.com&pbk=WcuRWNWWu4B4Eddf3uradKhm1_XYGiyHr3xnja7zeSE&sid=ae3966417b221271&serviceName=api.v1.StreamService#🇸🇪 Швеция — 2 
 vless://47d9b534-8a0a-4bd2-90f1-1d6ade14427e@150.241.101.80:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=yandex.net&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2#🇪🇪 Эстония
-vless://06e57b4b-d228-4ff3-a6fc-b1682fd47de8@it1.tylersuper.click:443?type=grpc&security=tls&fp=firefox&sni=it1.tylersuper.click&serviceName=grpc-api&alpn=h2#🇮🇹 Италия
 vless://995e6b4d-1d71-4542-95c7-dda552b6cd1c@nl4.mvasuper.click:443?encryption=none&flow=&type=grpc&mode=gun&serviceName=grpc-api&authority=nl4.mvasuper.click&security=tls&fp=firefox&sni=nl4.mvasuper.click&alpn=h3#🇳🇱 Нидерланды 
 vless://06e57b4b-d228-4ff3-a6fc-b1682fd47de8@nl4.mvasuper.click:443?type=grpc&security=tls&fp=firefox&sni=nl4.mvasuper.click&serviceName=grpc-api&alpn=h3#🇳🇱 Нидерланды [Игровой]
