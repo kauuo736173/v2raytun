@@ -19,6 +19,8 @@
 
 #announce:Статус подписки: ✅ Активна | 📲 Антизаглушки временно удалены ❗️ | Телеграм канал с новостями @harchovpn | Перепродажу ключа делаю харамом ❗️
 
+vless://de97b1dc-dca1-4cc4-87db-b0ddb6b6d3a3@78.17.114.210:443?authority=&encryption=mlkem768x25519plus.native.0rtt.RZQ2Gn0PiedG9ngCODo75LjCap4ljNKGVGF2aUNzIF4&fp=edge&pbk=AdkIv0n-Lw5phoZrhr7iiMQck8wulO-EBYKW0hTUkxY&security=reality&serviceName=&sid=cd&sni=android.com&spx=%2F5hfw3EBVEn6NTN3&type=grpc#🇳🇱🇩🇪 Основной  
+trojan://tplekox4lrvwmui4@78.17.114.210:56710?authority=&fp=edge&pbk=mHr46Ahh8Ed63BFvKMq-qGz4EpRVZaDubjQ8hUmZHw0&security=reality&serviceName=&sid=8c6a062928&sni=google.com&spx=%2Fd7CZxMHeihG8oQb&type=grpc#🇳🇱🇩🇪 Основной trojan
 vless://1dbf241b-f4ba-44b0-b7c7-202828511269@185.215.184.10:443?type=ws&host=cloudflare.vhub.pro&path=/sequre/ws?ed%3D2560&security=tls&sni=cloudflare.vhub.pro&alpn=http/1.1&fp=safari&allowInsecure=0#%F0%9F%87%AA%F0%9F%87%BA%20AUTO%20%E2%80%94%20%D0%A1%D0%B0%D0%BC%D1%8B%D0%B9%20%D0%B1%D1%8B%D1%81%D1%82%D1%80%D1%8B%D0%B9%20%E2%9A%A1%EF%B8%8F
 vless://47d9b534-8a0a-4bd2-90f1-1d6ade14427e@150.241.101.17:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=yandex.net&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2#🇪🇺 Европа 
 vless://995e6b4d-1d71-4542-95c7-dda552b6cd1c@gb3.mvasuper.click:443?encryption=none&flow=&type=grpc&mode=gun&serviceName=grpc-api&authority=gb3.mvasuper.click&security=tls&fp=firefox&sni=gb3.mvasuper.click&alpn=h2#🇪🇺 Европа — 2
