@@ -17,15 +17,13 @@
 
 #auto-continue: true
 
-#announce:Статус подписки: ✅ Активна | 📲 Антизаглушки находятся внизу ❗️ | Телеграм канал с новостями @harchovpn | Перепродажу ключа делаю харамом ❗️
+#announce:Статус подписки: ✅ Активна | 📲 Создатель +7963599412 | Телеграм канал с новостями @harchovpn | Перепродажу ключа делаю харамом ❗️
   
-vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@dc2.morinsq.su:443?type=xhttp&security=tls&fp=chrome&sni=dc2.morinsq.su&path=/api/cart/sync&host=dc2.morinsq.su&alpn=h2,http/1.1#📲 Создатель +79635990412
-vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@dc2.morinsq.su:443?type=xhttp&security=tls&fp=chrome&sni=dc2.morinsq.su&path=/api/cart/sync&host=dc2.morinsq.su&alpn=h2,http/1.1#❗️ Покупать только у него ⬆️
 vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@it.morinsq.su:443?type=tcp&security=reality&fp=qq&sni=it.morinsq.su&pbk=D3qByJ6qqJd5phYkfAtJpBqAhSb8VHPax1ZhvI3ZKEE&sid=96e380212691bba8&spx=/#🇪🇺 Основной FAST ⚡️
-vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@nl.morinsq.su:443?type=tcp&security=reality&fp=qq&sni=nl.morinsq.su&pbk=7_zP9LV9s3nThL5PG17S59_ksndJiatQgzO2991oDD4&sid=63444ac40392e261&spx=/#🇳🇱 Нидерланды
-vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@ru.morinsq.su:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=ru.morinsq.su&pbk=fV3Lk3Bzffhmg9mn7hxmLK2QsDr2obt2-YOxh-bjWGw&sid=061c40ab327a8340&spx=/#🇷🇺 Россия
-vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@it.morinsq.su:443?type=tcp&security=reality&fp=qq&sni=it.morinsq.su&pbk=D3qByJ6qqJd5phYkfAtJpBqAhSb8VHPax1ZhvI3ZKEE&sid=96e380212691bba8&spx=/#🇮🇹 beeline #1
-vless://9ffabf5d-d8d6-15b3-acab-3cbdd3457fc0@y.volnalink.uk:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=drive.yandex.ru&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=a8#🇷🇺 beeline #2
+vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@nl.morinsq.su:443?type=tcp&security=reality&fp=qq&sni=nl.morinsq.su&pbk=7_zP9LV9s3nThL5PG17S59_ksndJiatQgzO2991oDD4&sid=63444ac40392e261&spx=/#🇪🇺 Запасной Нидерланды
+vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@ru.morinsq.su:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=ru.morinsq.su&pbk=fV3Lk3Bzffhmg9mn7hxmLK2QsDr2obt2-YOxh-bjWGw&sid=061c40ab327a8340&spx=/#🇪🇺 Запасной Россия
+vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@it.morinsq.su:443?type=tcp&security=reality&fp=qq&sni=it.morinsq.su&pbk=D3qByJ6qqJd5phYkfAtJpBqAhSb8VHPax1ZhvI3ZKEE&sid=96e380212691bba8&spx=/#🇪🇺 beeline #1
+vless://9ffabf5d-d8d6-15b3-acab-3cbdd3457fc0@y.volnalink.uk:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=drive.yandex.ru&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=a8#🇪🇺 beeline #2
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@y.volnalink.uk:6666?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=drive.yandex.ru&pbk=n7SozQLXoCxDya7vBJwS5ebj39r4KCUZrfsnBfcCLGs&sid=ee65bc721c91#🇪🇺 AUTO — Обход белых списков 
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@sw.volnalink.uk:2083?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#🇪🇺 Обход белых списков #1
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@sw.volnalink.uk:2083?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#🇪🇺 Обход белых списков #2
