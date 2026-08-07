@@ -1,0 +1,1326 @@
+{
+  "dns" : {
+    "queryStrategy" : "UseIPv4",
+    "servers" : [
+      {
+        "address" : "77.88.8.8",
+        "domains" : [
+          "domain:mail.ru",
+          "domain:mradx.net",
+          "domain:imgsmail.ru",
+          "domain:attachmail.ru",
+          "domain:list.ru",
+          "domain:gmru.net",
+          "domain:my.com",
+          "domain:payservice.io",
+          "domain:ok.ru",
+          "domain:okcdn.ru",
+          "domain:mycdn.me",
+          "domain:odnoklassniki.ru",
+          "domain:odkl.ru",
+          "domain:ok.me",
+          "domain:apiok.ru",
+          "domain:apptracer.ru",
+          "domain:tamtam.chat",
+          "domain:vk.com",
+          "domain:vk.ru",
+          "domain:userapi.com",
+          "domain:vk-portal.net",
+          "domain:cdn-vk.ru",
+          "domain:vk-cdn.net",
+          "domain:vk-apps.com",
+          "domain:vkuser.net",
+          "domain:vkuseraudio.net",
+          "domain:vkuseraudio.com",
+          "domain:vkuservideo.net",
+          "domain:vkuservideo.com",
+          "domain:vkuserlive.net",
+          "domain:vkuserlive.com",
+          "domain:vkontakte.ru",
+          "domain:vkontakte.com",
+          "domain:vk.me",
+          "domain:vk.cc",
+          "domain:vk.link",
+          "domain:vk.company",
+          "domain:vkforms.ru",
+          "domain:vkpay.app",
+          "domain:vkpay.io",
+          "domain:max.ru",
+          "domain:oneme.ru",
+          "domain:dzen.ru",
+          "domain:yandex.ru",
+          "domain:yandex.com",
+          "domain:yandex.net",
+          "domain:yandex.st",
+          "domain:ya.ru",
+          "domain:yastatic.net",
+          "domain:yandexcloud.net",
+          "domain:yandex.cloud",
+          "domain:yandex-bank.net",
+          "domain:kinopoisk.ru",
+          "domain:auto.ru",
+          "domain:edadeal.ru",
+          "domain:bookmate.ru",
+          "domain:band.link",
+          "domain:adfox.ru",
+          "domain:yadi.sk",
+          "domain:rutube.ru",
+          "domain:rutubelist.ru",
+          "domain:5ka.ru",
+          "domain:perekrestok.ru",
+          "domain:x5club.ru",
+          "domain:chizhik.club",
+          "domain:x5.ru",
+          "domain:magnit.ru",
+          "domain:tander.ru",
+          "domain:mm.ru",
+          "domain:tvoymagnit.ru",
+          "domain:magnit-learn.ru",
+          "domain:gosuslugi.ru",
+          "domain:gu-st.ru",
+          "domain:nalog.gov.ru",
+          "domain:nalog.ru"
+        ],
+        "skipFallback" : true,
+        "timeoutMs" : 1500
+      },
+      {
+        "address" : "tcp:\/\/8.8.4.4",
+        "timeoutMs" : 1500
+      },
+      {
+        "address" : "tcp:\/\/1.0.0.1",
+        "timeoutMs" : 1500
+      },
+      {
+        "address" : "tcp:\/\/77.88.8.8",
+        "timeoutMs" : 1500
+      },
+      "localhost"
+    ]
+  },
+  "inbounds" : [
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10808,
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true,
+        "userLevel" : 8
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "quic",
+          "tls"
+        ],
+        "domainsExcluded" : [
+          "mtalk.google.com",
+          "push.apple.com",
+          "api.push.apple.com",
+          "push-apple.com.akadns.net",
+          "courier.push.apple.com",
+          "Mijia Cloud",
+          "dlg.io.mi.com"
+        ],
+        "enabled" : true,
+        "metadataOnly" : false,
+        "routeOnly" : true
+      },
+      "tag" : "socks-in"
+    },
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10809,
+      "protocol" : "http",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true,
+        "userLevel" : 8
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "quic",
+          "tls"
+        ],
+        "domainsExcluded" : [
+          "mtalk.google.com",
+          "push.apple.com",
+          "api.push.apple.com",
+          "push-apple.com.akadns.net",
+          "courier.push.apple.com",
+          "Mijia Cloud",
+          "dlg.io.mi.com"
+        ],
+        "enabled" : true,
+        "metadataOnly" : false,
+        "routeOnly" : true
+      },
+      "tag" : "http-in"
+    },
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10820,
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true
+      },
+      "tag" : "socks-direct"
+    }
+  ],
+  "log" : {
+    "access" : "\/private\/var\/mobile\/Containers\/Shared\/AppGroup\/F4A89442-C222-4323-8E11-7FF95FFC77D7\/Library\/Application Support\/Xray\/logs\/access.log",
+    "dnsLog" : true,
+    "loglevel" : "Warning"
+  },
+  "outbounds" : [
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "dbs-ru.pool-c.netcenter-cdn.com",
+            "port" : 43443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "",
+                "id" : "6b0d5a3c-7484-4c45-a511-db1f8f1ea02b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "isCustomFinalmask" : false,
+        "network" : "xhttp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "qXyJbGAN_0PyZFVR7vb7anVdCK2Zhxexs7dVgc3vqn0",
+          "serverName" : "x5m.x5.ru",
+          "shortId" : "20",
+          "show" : false,
+          "spiderX" : "\/"
+        },
+        "security" : "reality",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1",
+            "h2"
+          ],
+          "disableSystemRoot" : false,
+          "echForceQuery" : "none",
+          "enableSessionResumption" : false,
+          "fingerprint" : "firefox",
+          "mldsa65Verify" : "",
+          "pinnedPeerCertSha256" : "",
+          "serverName" : "x5m.x5.ru"
+        },
+        "xHTTPSettings" : {
+          "extra" : {
+            "scMaxEachPostBytes" : 798233,
+            "scMinPostsIntervalMs" : "30",
+            "seqKey" : "part_index",
+            "seqPlacement" : "cookie",
+            "sessionIDKey" : "stream_auth",
+            "sessionIDPlacement" : "cookie",
+            "sessionKey" : "stream_auth",
+            "sessionPlacement" : "cookie",
+            "uplinkChunkSize" : 0,
+            "uplinkDataPlacement" : "body",
+            "uplinkHTTPMethod" : "POST",
+            "xmux" : {
+              "cMaxLifetimeMs" : 0,
+              "cMaxReuseTimes" : "36-96",
+              "hMaxRequestTimes" : "320-640",
+              "hMaxReusableSecs" : "720-1800",
+              "maxConcurrency" : "8-32",
+              "maxConnections" : 0
+            },
+            "xPaddingBytes" : "96-1040",
+            "xPaddingHeader" : "X-Media-Token",
+            "xPaddingKey" : "_t",
+            "xPaddingMethod" : "tokenish",
+            "xPaddingObfsMode" : true,
+            "xPaddingPlacement" : "queryInHeader"
+          },
+          "host" : "x5m.x5.ru",
+          "mode" : "packet-up",
+          "path" : "\/api\/v2\/streams\/stream.ts"
+        }
+      },
+      "tag" : "proxy"
+    },
+    {
+      "protocol" : "freedom",
+      "settings" : {
+        "domainStrategy" : "UseIPv4"
+      },
+      "tag" : "direct"
+    },
+    {
+      "protocol" : "dns",
+      "settings" : {
+        "nonIPQuery" : "reject",
+        "userLevel" : 0
+      },
+      "tag" : "dns-out"
+    },
+    {
+      "protocol" : "blackhole",
+      "tag" : "block"
+    }
+  ],
+  "policy" : {
+    "levels" : {
+      "8" : {
+        "bufferSize" : 4,
+        "connIdle" : 180,
+        "downlinkOnly" : 2,
+        "handshake" : 4,
+        "statsUserDownlink" : false,
+        "statsUserOnline" : false,
+        "statsUserUplink" : false,
+        "uplinkOnly" : 2
+      }
+    }
+  },
+  "remarks" : "🇳🇱 ⚡Нидерланды: Белый список",
+  "routing" : {
+    "domainStrategy" : "IPIfNonMatch",
+    "rules" : [
+      {
+        "ip" : [
+          "0.0.0.0"
+        ],
+        "outboundTag" : "block",
+        "type" : "field"
+      },
+      {
+        "network" : "udp",
+        "outboundTag" : "block",
+        "port" : "443",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "8.8.4.4",
+          "1.0.0.1",
+          "198.18.0.0\/15"
+        ],
+        "outboundTag" : "proxy",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "77.88.8.8"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "network" : "tcp,udp",
+        "outboundTag" : "dns-out",
+        "port" : "53",
+        "type" : "field"
+      },
+      {
+        "inboundTag" : [
+          "socks-direct"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "geoip:private"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "domain" : [
+          "domain:mail.ru",
+          "domain:mradx.net",
+          "domain:imgsmail.ru",
+          "domain:attachmail.ru",
+          "domain:list.ru",
+          "domain:gmru.net",
+          "domain:my.com",
+          "domain:payservice.io",
+          "domain:ok.ru",
+          "domain:okcdn.ru",
+          "domain:mycdn.me",
+          "domain:odnoklassniki.ru",
+          "domain:odkl.ru",
+          "domain:ok.me",
+          "domain:apiok.ru",
+          "domain:apptracer.ru",
+          "domain:tamtam.chat",
+          "domain:vk.com",
+          "domain:vk.ru",
+          "domain:userapi.com",
+          "domain:vk-portal.net",
+          "domain:cdn-vk.ru",
+          "domain:vk-cdn.net",
+          "domain:vk-apps.com",
+          "domain:vkuser.net",
+          "domain:vkuseraudio.net",
+          "domain:vkuseraudio.com",
+          "domain:vkuservideo.net",
+          "domain:vkuservideo.com",
+          "domain:vkuserlive.net",
+          "domain:vkuserlive.com",
+          "domain:vkontakte.ru",
+          "domain:vkontakte.com",
+          "domain:vk.me",
+          "domain:vk.cc",
+          "domain:vk.link",
+          "domain:vk.company",
+          "domain:vkforms.ru",
+          "domain:vkpay.app",
+          "domain:vkpay.io",
+          "domain:max.ru",
+          "domain:oneme.ru",
+          "domain:dzen.ru",
+          "domain:yandex.ru",
+          "domain:yandex.com",
+          "domain:yandex.net",
+          "domain:yandex.st",
+          "domain:ya.ru",
+          "domain:yastatic.net",
+          "domain:yandexcloud.net",
+          "domain:yandex.cloud",
+          "domain:yandex-bank.net",
+          "domain:kinopoisk.ru",
+          "domain:auto.ru",
+          "domain:edadeal.ru",
+          "domain:bookmate.ru",
+          "domain:band.link",
+          "domain:adfox.ru",
+          "domain:yadi.sk",
+          "domain:rutube.ru",
+          "domain:rutubelist.ru",
+          "domain:5ka.ru",
+          "domain:perekrestok.ru",
+          "domain:x5club.ru",
+          "domain:chizhik.club",
+          "domain:x5.ru",
+          "domain:magnit.ru",
+          "domain:tander.ru",
+          "domain:mm.ru",
+          "domain:tvoymagnit.ru",
+          "domain:magnit-learn.ru",
+          "domain:gosuslugi.ru",
+          "domain:gu-st.ru",
+          "domain:nalog.gov.ru",
+          "domain:nalog.ru"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "0.0.0.0\/0"
+        ],
+        "outboundTag" : "proxy",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "::\/0"
+        ],
+        "outboundTag" : "proxy",
+        "type" : "field"
+      }
+    ]
+  }
+}
+{
+  "dns" : {
+    "queryStrategy" : "UseIPv4",
+    "servers" : [
+      {
+        "address" : "77.88.8.8",
+        "domains" : [
+          "domain:mail.ru",
+          "domain:mradx.net",
+          "domain:imgsmail.ru",
+          "domain:attachmail.ru",
+          "domain:list.ru",
+          "domain:gmru.net",
+          "domain:my.com",
+          "domain:payservice.io",
+          "domain:ok.ru",
+          "domain:okcdn.ru",
+          "domain:mycdn.me",
+          "domain:odnoklassniki.ru",
+          "domain:odkl.ru",
+          "domain:ok.me",
+          "domain:apiok.ru",
+          "domain:apptracer.ru",
+          "domain:tamtam.chat",
+          "domain:vk.com",
+          "domain:vk.ru",
+          "domain:userapi.com",
+          "domain:vk-portal.net",
+          "domain:cdn-vk.ru",
+          "domain:vk-cdn.net",
+          "domain:vk-apps.com",
+          "domain:vkuser.net",
+          "domain:vkuseraudio.net",
+          "domain:vkuseraudio.com",
+          "domain:vkuservideo.net",
+          "domain:vkuservideo.com",
+          "domain:vkuserlive.net",
+          "domain:vkuserlive.com",
+          "domain:vkontakte.ru",
+          "domain:vkontakte.com",
+          "domain:vk.me",
+          "domain:vk.cc",
+          "domain:vk.link",
+          "domain:vk.company",
+          "domain:vkforms.ru",
+          "domain:vkpay.app",
+          "domain:vkpay.io",
+          "domain:max.ru",
+          "domain:oneme.ru",
+          "domain:dzen.ru",
+          "domain:yandex.ru",
+          "domain:yandex.com",
+          "domain:yandex.net",
+          "domain:yandex.st",
+          "domain:ya.ru",
+          "domain:yastatic.net",
+          "domain:yandexcloud.net",
+          "domain:yandex.cloud",
+          "domain:yandex-bank.net",
+          "domain:kinopoisk.ru",
+          "domain:auto.ru",
+          "domain:edadeal.ru",
+          "domain:bookmate.ru",
+          "domain:band.link",
+          "domain:adfox.ru",
+          "domain:yadi.sk",
+          "domain:rutube.ru",
+          "domain:rutubelist.ru",
+          "domain:5ka.ru",
+          "domain:perekrestok.ru",
+          "domain:x5club.ru",
+          "domain:chizhik.club",
+          "domain:x5.ru",
+          "domain:magnit.ru",
+          "domain:tander.ru",
+          "domain:mm.ru",
+          "domain:tvoymagnit.ru",
+          "domain:magnit-learn.ru",
+          "domain:gosuslugi.ru",
+          "domain:gu-st.ru",
+          "domain:nalog.gov.ru",
+          "domain:nalog.ru"
+        ],
+        "skipFallback" : true,
+        "timeoutMs" : 1500
+      },
+      {
+        "address" : "tcp:\/\/8.8.4.4",
+        "timeoutMs" : 1500
+      },
+      {
+        "address" : "tcp:\/\/1.0.0.1",
+        "timeoutMs" : 1500
+      },
+      {
+        "address" : "tcp:\/\/77.88.8.8",
+        "timeoutMs" : 1500
+      },
+      "localhost"
+    ]
+  },
+  "inbounds" : [
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10808,
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true,
+        "userLevel" : 8
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "quic",
+          "tls"
+        ],
+        "domainsExcluded" : [
+          "mtalk.google.com",
+          "push.apple.com",
+          "api.push.apple.com",
+          "push-apple.com.akadns.net",
+          "courier.push.apple.com",
+          "Mijia Cloud",
+          "dlg.io.mi.com"
+        ],
+        "enabled" : true,
+        "metadataOnly" : false,
+        "routeOnly" : true
+      },
+      "tag" : "socks-in"
+    },
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10809,
+      "protocol" : "http",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true,
+        "userLevel" : 8
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "quic",
+          "tls"
+        ],
+        "domainsExcluded" : [
+          "mtalk.google.com",
+          "push.apple.com",
+          "api.push.apple.com",
+          "push-apple.com.akadns.net",
+          "courier.push.apple.com",
+          "Mijia Cloud",
+          "dlg.io.mi.com"
+        ],
+        "enabled" : true,
+        "metadataOnly" : false,
+        "routeOnly" : true
+      },
+      "tag" : "http-in"
+    },
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10820,
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true
+      },
+      "tag" : "socks-direct"
+    }
+  ],
+  "log" : {
+    "access" : "\/private\/var\/mobile\/Containers\/Shared\/AppGroup\/F4A89442-C222-4323-8E11-7FF95FFC77D7\/Library\/Application Support\/Xray\/logs\/access.log",
+    "dnsLog" : true,
+    "loglevel" : "Warning"
+  },
+  "outbounds" : [
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "dbs-ru.pool-c.netcenter-cdn.com",
+            "port" : 43443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "",
+                "id" : "b5f3515a-bf68-4065-a939-90f0209d82e8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "isCustomFinalmask" : false,
+        "network" : "xhttp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "sl0wx4BFdJ7SsfQ6SjkSHU_SQ_0mAhyIlT2eAxWGRyQ",
+          "serverName" : "5ka-cdn.x5static.net",
+          "shortId" : "e41e",
+          "show" : false,
+          "spiderX" : "\/"
+        },
+        "security" : "reality",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1",
+            "h2"
+          ],
+          "disableSystemRoot" : false,
+          "echForceQuery" : "none",
+          "enableSessionResumption" : false,
+          "fingerprint" : "firefox",
+          "mldsa65Verify" : "",
+          "pinnedPeerCertSha256" : "",
+          "serverName" : "5ka-cdn.x5static.net"
+        },
+        "xHTTPSettings" : {
+          "extra" : {
+            "scMaxEachPostBytes" : 798233,
+            "scMinPostsIntervalMs" : "30",
+            "seqKey" : "part_index",
+            "seqPlacement" : "cookie",
+            "sessionIDKey" : "stream_auth",
+            "sessionIDPlacement" : "cookie",
+            "sessionKey" : "stream_auth",
+            "sessionPlacement" : "cookie",
+            "uplinkChunkSize" : 0,
+            "uplinkDataPlacement" : "body",
+            "uplinkHTTPMethod" : "POST",
+            "xmux" : {
+              "cMaxLifetimeMs" : 0,
+              "cMaxReuseTimes" : "36-96",
+              "hMaxRequestTimes" : "320-640",
+              "hMaxReusableSecs" : "720-1800",
+              "maxConcurrency" : "8-32",
+              "maxConnections" : 0
+            },
+            "xPaddingBytes" : "96-1040",
+            "xPaddingHeader" : "X-Media-Token",
+            "xPaddingKey" : "_t",
+            "xPaddingMethod" : "tokenish",
+            "xPaddingObfsMode" : true,
+            "xPaddingPlacement" : "queryInHeader"
+          },
+          "host" : "5ka-cdn.x5static.net",
+          "mode" : "packet-up",
+          "path" : "\/api\/v2\/streams\/stream.ts"
+        }
+      },
+      "tag" : "proxy"
+    },
+    {
+      "protocol" : "freedom",
+      "settings" : {
+        "domainStrategy" : "UseIPv4"
+      },
+      "tag" : "direct"
+    },
+    {
+      "protocol" : "dns",
+      "settings" : {
+        "nonIPQuery" : "reject",
+        "userLevel" : 0
+      },
+      "tag" : "dns-out"
+    },
+    {
+      "protocol" : "blackhole",
+      "tag" : "block"
+    }
+  ],
+  "policy" : {
+    "levels" : {
+      "8" : {
+        "bufferSize" : 4,
+        "connIdle" : 180,
+        "downlinkOnly" : 2,
+        "handshake" : 4,
+        "statsUserDownlink" : false,
+        "statsUserOnline" : false,
+        "statsUserUplink" : false,
+        "uplinkOnly" : 2
+      }
+    }
+  },
+  "remarks" : "🇨🇭 ⚡Швейцария: Белый список",
+  "routing" : {
+    "domainStrategy" : "IPIfNonMatch",
+    "rules" : [
+      {
+        "ip" : [
+          "0.0.0.0"
+        ],
+        "outboundTag" : "block",
+        "type" : "field"
+      },
+      {
+        "network" : "udp",
+        "outboundTag" : "block",
+        "port" : "443",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "8.8.4.4",
+          "1.0.0.1",
+          "198.18.0.0\/15"
+        ],
+        "outboundTag" : "proxy",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "77.88.8.8"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "network" : "tcp,udp",
+        "outboundTag" : "dns-out",
+        "port" : "53",
+        "type" : "field"
+      },
+      {
+        "inboundTag" : [
+          "socks-direct"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "geoip:private"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "domain" : [
+          "domain:mail.ru",
+          "domain:mradx.net",
+          "domain:imgsmail.ru",
+          "domain:attachmail.ru",
+          "domain:list.ru",
+          "domain:gmru.net",
+          "domain:my.com",
+          "domain:payservice.io",
+          "domain:ok.ru",
+          "domain:okcdn.ru",
+          "domain:mycdn.me",
+          "domain:odnoklassniki.ru",
+          "domain:odkl.ru",
+          "domain:ok.me",
+          "domain:apiok.ru",
+          "domain:apptracer.ru",
+          "domain:tamtam.chat",
+          "domain:vk.com",
+          "domain:vk.ru",
+          "domain:userapi.com",
+          "domain:vk-portal.net",
+          "domain:cdn-vk.ru",
+          "domain:vk-cdn.net",
+          "domain:vk-apps.com",
+          "domain:vkuser.net",
+          "domain:vkuseraudio.net",
+          "domain:vkuseraudio.com",
+          "domain:vkuservideo.net",
+          "domain:vkuservideo.com",
+          "domain:vkuserlive.net",
+          "domain:vkuserlive.com",
+          "domain:vkontakte.ru",
+          "domain:vkontakte.com",
+          "domain:vk.me",
+          "domain:vk.cc",
+          "domain:vk.link",
+          "domain:vk.company",
+          "domain:vkforms.ru",
+          "domain:vkpay.app",
+          "domain:vkpay.io",
+          "domain:max.ru",
+          "domain:oneme.ru",
+          "domain:dzen.ru",
+          "domain:yandex.ru",
+          "domain:yandex.com",
+          "domain:yandex.net",
+          "domain:yandex.st",
+          "domain:ya.ru",
+          "domain:yastatic.net",
+          "domain:yandexcloud.net",
+          "domain:yandex.cloud",
+          "domain:yandex-bank.net",
+          "domain:kinopoisk.ru",
+          "domain:auto.ru",
+          "domain:edadeal.ru",
+          "domain:bookmate.ru",
+          "domain:band.link",
+          "domain:adfox.ru",
+          "domain:yadi.sk",
+          "domain:rutube.ru",
+          "domain:rutubelist.ru",
+          "domain:5ka.ru",
+          "domain:perekrestok.ru",
+          "domain:x5club.ru",
+          "domain:chizhik.club",
+          "domain:x5.ru",
+          "domain:magnit.ru",
+          "domain:tander.ru",
+          "domain:mm.ru",
+          "domain:tvoymagnit.ru",
+          "domain:magnit-learn.ru",
+          "domain:gosuslugi.ru",
+          "domain:gu-st.ru",
+          "domain:nalog.gov.ru",
+          "domain:nalog.ru"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "0.0.0.0\/0"
+        ],
+        "outboundTag" : "proxy",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "::\/0"
+        ],
+        "outboundTag" : "proxy",
+        "type" : "field"
+      }
+    ]
+  }
+}
+{
+  "dns" : {
+    "queryStrategy" : "UseIPv4",
+    "servers" : [
+      {
+        "address" : "77.88.8.8",
+        "domains" : [
+          "domain:mail.ru",
+          "domain:mradx.net",
+          "domain:imgsmail.ru",
+          "domain:attachmail.ru",
+          "domain:list.ru",
+          "domain:gmru.net",
+          "domain:my.com",
+          "domain:payservice.io",
+          "domain:ok.ru",
+          "domain:okcdn.ru",
+          "domain:mycdn.me",
+          "domain:odnoklassniki.ru",
+          "domain:odkl.ru",
+          "domain:ok.me",
+          "domain:apiok.ru",
+          "domain:apptracer.ru",
+          "domain:tamtam.chat",
+          "domain:vk.com",
+          "domain:vk.ru",
+          "domain:userapi.com",
+          "domain:vk-portal.net",
+          "domain:cdn-vk.ru",
+          "domain:vk-cdn.net",
+          "domain:vk-apps.com",
+          "domain:vkuser.net",
+          "domain:vkuseraudio.net",
+          "domain:vkuseraudio.com",
+          "domain:vkuservideo.net",
+          "domain:vkuservideo.com",
+          "domain:vkuserlive.net",
+          "domain:vkuserlive.com",
+          "domain:vkontakte.ru",
+          "domain:vkontakte.com",
+          "domain:vk.me",
+          "domain:vk.cc",
+          "domain:vk.link",
+          "domain:vk.company",
+          "domain:vkforms.ru",
+          "domain:vkpay.app",
+          "domain:vkpay.io",
+          "domain:max.ru",
+          "domain:oneme.ru",
+          "domain:dzen.ru",
+          "domain:yandex.ru",
+          "domain:yandex.com",
+          "domain:yandex.net",
+          "domain:yandex.st",
+          "domain:ya.ru",
+          "domain:yastatic.net",
+          "domain:yandexcloud.net",
+          "domain:yandex.cloud",
+          "domain:yandex-bank.net",
+          "domain:kinopoisk.ru",
+          "domain:auto.ru",
+          "domain:edadeal.ru",
+          "domain:bookmate.ru",
+          "domain:band.link",
+          "domain:adfox.ru",
+          "domain:yadi.sk",
+          "domain:rutube.ru",
+          "domain:rutubelist.ru",
+          "domain:5ka.ru",
+          "domain:perekrestok.ru",
+          "domain:x5club.ru",
+          "domain:chizhik.club",
+          "domain:x5.ru",
+          "domain:magnit.ru",
+          "domain:tander.ru",
+          "domain:mm.ru",
+          "domain:tvoymagnit.ru",
+          "domain:magnit-learn.ru",
+          "domain:gosuslugi.ru",
+          "domain:gu-st.ru",
+          "domain:nalog.gov.ru",
+          "domain:nalog.ru"
+        ],
+        "skipFallback" : true,
+        "timeoutMs" : 1500
+      },
+      {
+        "address" : "tcp:\/\/8.8.4.4",
+        "timeoutMs" : 1500
+      },
+      {
+        "address" : "tcp:\/\/1.0.0.1",
+        "timeoutMs" : 1500
+      },
+      {
+        "address" : "tcp:\/\/77.88.8.8",
+        "timeoutMs" : 1500
+      },
+      "localhost"
+    ]
+  },
+  "inbounds" : [
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10808,
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true,
+        "userLevel" : 8
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "quic",
+          "tls"
+        ],
+        "domainsExcluded" : [
+          "mtalk.google.com",
+          "push.apple.com",
+          "api.push.apple.com",
+          "push-apple.com.akadns.net",
+          "courier.push.apple.com",
+          "Mijia Cloud",
+          "dlg.io.mi.com"
+        ],
+        "enabled" : true,
+        "metadataOnly" : false,
+        "routeOnly" : true
+      },
+      "tag" : "socks-in"
+    },
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10809,
+      "protocol" : "http",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true,
+        "userLevel" : 8
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "quic",
+          "tls"
+        ],
+        "domainsExcluded" : [
+          "mtalk.google.com",
+          "push.apple.com",
+          "api.push.apple.com",
+          "push-apple.com.akadns.net",
+          "courier.push.apple.com",
+          "Mijia Cloud",
+          "dlg.io.mi.com"
+        ],
+        "enabled" : true,
+        "metadataOnly" : false,
+        "routeOnly" : true
+      },
+      "tag" : "http-in"
+    },
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10820,
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true
+      },
+      "tag" : "socks-direct"
+    }
+  ],
+  "log" : {
+    "access" : "\/private\/var\/mobile\/Containers\/Shared\/AppGroup\/F4A89442-C222-4323-8E11-7FF95FFC77D7\/Library\/Application Support\/Xray\/logs\/access.log",
+    "dnsLog" : true,
+    "loglevel" : "Warning"
+  },
+  "outbounds" : [
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "dbs-ru.pool-c.netcenter-cdn.com",
+            "port" : 43443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "",
+                "id" : "e8e05308-06ed-4d7d-b674-4e96d4d1b866"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "isCustomFinalmask" : false,
+        "network" : "xhttp",
+        "realitySettings" : {
+          "fingerprint" : "firefox",
+          "publicKey" : "mCtDwMr9u9MdztUGzCGADj-nfHv6CQpAf_ywbyKl8ww",
+          "serverName" : "ads.x5media.ru",
+          "shortId" : "4ffd82234e97",
+          "show" : false,
+          "spiderX" : "\/"
+        },
+        "security" : "reality",
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "alpn" : [
+            "http\/1.1",
+            "h2"
+          ],
+          "disableSystemRoot" : false,
+          "echForceQuery" : "none",
+          "enableSessionResumption" : false,
+          "fingerprint" : "firefox",
+          "mldsa65Verify" : "",
+          "pinnedPeerCertSha256" : "",
+          "serverName" : "ads.x5media.ru"
+        },
+        "xHTTPSettings" : {
+          "extra" : {
+            "scMaxEachPostBytes" : 798233,
+            "scMinPostsIntervalMs" : "30",
+            "seqKey" : "part_index",
+            "seqPlacement" : "cookie",
+            "sessionIDKey" : "stream_auth",
+            "sessionIDPlacement" : "cookie",
+            "sessionKey" : "stream_auth",
+            "sessionPlacement" : "cookie",
+            "uplinkChunkSize" : 0,
+            "uplinkDataPlacement" : "body",
+            "uplinkHTTPMethod" : "POST",
+            "xmux" : {
+              "cMaxLifetimeMs" : 0,
+              "cMaxReuseTimes" : "36-96",
+              "hMaxRequestTimes" : "320-640",
+              "hMaxReusableSecs" : "720-1800",
+              "maxConcurrency" : "8-32",
+              "maxConnections" : 0
+            },
+            "xPaddingBytes" : "96-1040",
+            "xPaddingHeader" : "X-Media-Token",
+            "xPaddingKey" : "_t",
+            "xPaddingMethod" : "tokenish",
+            "xPaddingObfsMode" : true,
+            "xPaddingPlacement" : "queryInHeader"
+          },
+          "host" : "ads.x5media.ru",
+          "mode" : "packet-up",
+          "path" : "\/api\/v2\/streams\/stream.ts"
+        }
+      },
+      "tag" : "proxy"
+    },
+    {
+      "protocol" : "freedom",
+      "settings" : {
+        "domainStrategy" : "UseIPv4"
+      },
+      "tag" : "direct"
+    },
+    {
+      "protocol" : "dns",
+      "settings" : {
+        "nonIPQuery" : "reject",
+        "userLevel" : 0
+      },
+      "tag" : "dns-out"
+    },
+    {
+      "protocol" : "blackhole",
+      "tag" : "block"
+    }
+  ],
+  "policy" : {
+    "levels" : {
+      "8" : {
+        "bufferSize" : 4,
+        "connIdle" : 180,
+        "downlinkOnly" : 2,
+        "handshake" : 4,
+        "statsUserDownlink" : false,
+        "statsUserOnline" : false,
+        "statsUserUplink" : false,
+        "uplinkOnly" : 2
+      }
+    }
+  },
+  "remarks" : "🇩🇪 ⚡Германия: Белый список",
+  "routing" : {
+    "domainStrategy" : "IPIfNonMatch",
+    "rules" : [
+      {
+        "ip" : [
+          "0.0.0.0"
+        ],
+        "outboundTag" : "block",
+        "type" : "field"
+      },
+      {
+        "network" : "udp",
+        "outboundTag" : "block",
+        "port" : "443",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "8.8.4.4",
+          "1.0.0.1",
+          "198.18.0.0\/15"
+        ],
+        "outboundTag" : "proxy",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "77.88.8.8"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "network" : "tcp,udp",
+        "outboundTag" : "dns-out",
+        "port" : "53",
+        "type" : "field"
+      },
+      {
+        "inboundTag" : [
+          "socks-direct"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "geoip:private"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "domain" : [
+          "domain:mail.ru",
+          "domain:mradx.net",
+          "domain:imgsmail.ru",
+          "domain:attachmail.ru",
+          "domain:list.ru",
+          "domain:gmru.net",
+          "domain:my.com",
+          "domain:payservice.io",
+          "domain:ok.ru",
+          "domain:okcdn.ru",
+          "domain:mycdn.me",
+          "domain:odnoklassniki.ru",
+          "domain:odkl.ru",
+          "domain:ok.me",
+          "domain:apiok.ru",
+          "domain:apptracer.ru",
+          "domain:tamtam.chat",
+          "domain:vk.com",
+          "domain:vk.ru",
+          "domain:userapi.com",
+          "domain:vk-portal.net",
+          "domain:cdn-vk.ru",
+          "domain:vk-cdn.net",
+          "domain:vk-apps.com",
+          "domain:vkuser.net",
+          "domain:vkuseraudio.net",
+          "domain:vkuseraudio.com",
+          "domain:vkuservideo.net",
+          "domain:vkuservideo.com",
+          "domain:vkuserlive.net",
+          "domain:vkuserlive.com",
+          "domain:vkontakte.ru",
+          "domain:vkontakte.com",
+          "domain:vk.me",
+          "domain:vk.cc",
+          "domain:vk.link",
+          "domain:vk.company",
+          "domain:vkforms.ru",
+          "domain:vkpay.app",
+          "domain:vkpay.io",
+          "domain:max.ru",
+          "domain:oneme.ru",
+          "domain:dzen.ru",
+          "domain:yandex.ru",
+          "domain:yandex.com",
+          "domain:yandex.net",
+          "domain:yandex.st",
+          "domain:ya.ru",
+          "domain:yastatic.net",
+          "domain:yandexcloud.net",
+          "domain:yandex.cloud",
+          "domain:yandex-bank.net",
+          "domain:kinopoisk.ru",
+          "domain:auto.ru",
+          "domain:edadeal.ru",
+          "domain:bookmate.ru",
+          "domain:band.link",
+          "domain:adfox.ru",
+          "domain:yadi.sk",
+          "domain:rutube.ru",
+          "domain:rutubelist.ru",
+          "domain:5ka.ru",
+          "domain:perekrestok.ru",
+          "domain:x5club.ru",
+          "domain:chizhik.club",
+          "domain:x5.ru",
+          "domain:magnit.ru",
+          "domain:tander.ru",
+          "domain:mm.ru",
+          "domain:tvoymagnit.ru",
+          "domain:magnit-learn.ru",
+          "domain:gosuslugi.ru",
+          "domain:gu-st.ru",
+          "domain:nalog.gov.ru",
+          "domain:nalog.ru"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "0.0.0.0\/0"
+        ],
+        "outboundTag" : "proxy",
+        "type" : "field"
+      },
+      {
+        "ip" : [
+          "::\/0"
+        ],
+        "outboundTag" : "proxy",
+        "type" : "field"
+      }
+    ]
+  }
+}
