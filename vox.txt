@@ -19,12 +19,13 @@
 
 #announce:Статус подписки: ✅ Активна | 📲 Создатель +7963599412 | Телеграм канал с новостями @harchovpn | Перепродажу ключа делаю харамом ❗️
   
-vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@it.morinsq.su:443?type=tcp&security=reality&fp=qq&sni=it.morinsq.su&pbk=D3qByJ6qqJd5phYkfAtJpBqAhSb8VHPax1ZhvI3ZKEE&sid=96e380212691bba8&spx=/#🇪🇺 Основной FAST ⚡️
-vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@144.31.1.41:2083?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#🇪🇺 Запасной Польша
-vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@ru.morinsq.su:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=ru.morinsq.su&pbk=fV3Lk3Bzffhmg9mn7hxmLK2QsDr2obt2-YOxh-bjWGw&sid=061c40ab327a8340&spx=/#🇪🇺 Запасной Россия
-vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@it.morinsq.su:443?type=tcp&security=reality&fp=qq&sni=it.morinsq.su&pbk=D3qByJ6qqJd5phYkfAtJpBqAhSb8VHPax1ZhvI3ZKEE&sid=96e380212691bba8&spx=/#🇪🇺 beeline #1
-vless://9ffabf5d-d8d6-15b3-acab-3cbdd3457fc0@y.volnalink.uk:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=drive.yandex.ru&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=a8#🇪🇺 beeline #2
+vless://f66ca6aa-2d92-410b-b878-9fa6754b0f29@ru.pool-c.netcenter-cdn.com:44001?encryption=none&flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=firefox&sni=pool-c.pools.netcenter-cdn.com&pbk=qXyJbGAN_0PyZFVR7vb7anVdCK2Zhxexs7dVgc3vqn0&sid=ace3e0&spx=/#🇪🇺 Основной ⚡️
+vless://0f9f25cb-afba-4bf7-8ae0-afede07ce6d5@ru.pool-c.netcenter-cdn.com:44003?encryption=none&flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=firefox&sni=pool-c.pools.netcenter-cdn.com&pbk=mCtDwMr9u9MdztUGzCGADj-nfHv6CQpAf_ywbyKl8ww&sid=4ffd82234e97&spx=/#🇩🇪 Германия
+vless://0f9f25cb-afba-4bf7-8ae0-afede07ce6d5@ru.pool-c.netcenter-cdn.com:44003?encryption=none&flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=firefox&sni=pool-c.pools.netcenter-cdn.com&pbk=mCtDwMr9u9MdztUGzCGADj-nfHv6CQpAf_ywbyKl8ww&sid=dbd745&spx=/#🇳🇱 Нидерланды 
+vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@it.morinsq.su:443?type=tcp&security=reality&fp=qq&sni=it.morinsq.su&pbk=D3qByJ6qqJd5phYkfAtJpBqAhSb8VHPax1ZhvI3ZKEE&sid=96e380212691bba8&spx=/#🇮🇹 Италия 
+vless://8ac2ae58-4924-4610-b08e-de1d2cb88d6b@ru.pool-c.netcenter-cdn.com:44002?encryption=none&flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=firefox&sni=pool-c.pools.netcenter-cdn.com&pbk=sl0wx4BFdJ7SsfQ6SjkSHU_SQ_0mAhyIlT2eAxWGRyQ&sid=4592f5b911f859&spx=/#🇨🇭 Швейцария
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@y.volnalink.uk:6666?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=drive.yandex.ru&pbk=n7SozQLXoCxDya7vBJwS5ebj39r4KCUZrfsnBfcCLGs&sid=ee65bc721c91#🇪🇺 AUTO — Обход белых списков 
 vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@95.163.232.54:8443?type=tcp&security=reality&fp=firefox&sni=max.ru&pbk=M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do&sid=a48d397391861a3c#🇪🇺 Обход белых списков #1
 vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@79.174.93.202:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=max.ru&pbk=s3DBlh5fMi4ykEZPRv4kq806W9sqiITthW5rlueic10&sid=f4027ed0947859d3#🇪🇺 Обход белых списков #2
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@sw.volnalink.uk:2083?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#🇪🇺 Обход белых списков #3
+vless://e8e05308-06ed-4d7d-b674-4e96d4d1b866@dbs-ru.pool-c.netcenter-cdn.com:43443?encryption=none&flow=&type=xhttp&security=reality&fp=firefox&sni=ads.x5media.ru&pbk=mCtDwMr9u9MdztUGzCGADj-nfHv6CQpAf_ywbyKl8ww&sid=4ffd82234e97&spx=/#1
