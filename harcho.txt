@@ -19,7 +19,7 @@
 
 #announce:Статус подписки: ✅ Активна | 📲 Создатель +7963599412 | Телеграм канал с новостями @harchovpn | Перепродажу ключа делаю харамом ❗️
 
-vless://e99f4a90-ce23-15b3-bb35-08da858aa335@5.175.134.75:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=max.ru&pbk=zTH3m7h5RrVagZ5WnwEEoJIpFhHFW0bcKKf68h7eMno#🇪🇺 Автовыбор VPN - 10 Гбит ⚡️
+vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@144.31.128.108:2083?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#🇪🇺 Автовыбор VPN - 10 Гбит ⚡️
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@gb.volnalink.uk:2083?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#🇪🇺 Автовыбор 2 VPN - 10 Гбит ⚡️
 vless://47d9b534-8a0a-4bd2-90f1-1d6ade14427e@150.241.101.80:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=yandex.net&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2#🇪🇺 Для Wi-Fi ⚡️
 vless://d07bd879-303d-437a-bdab-573c1d114980@194.55.235.174:3560?flow=xtls-rprx-vision&type=tcp&security=reality&fp=random&sni=ya.ru&pbk=CQE7toBYdrpPcFYLJRgmsr0P3oaL7K6g1NpppDvq-ys#🇩🇪 Германия VPN - 10 Гбит ⚡️
