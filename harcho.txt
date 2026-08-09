@@ -21,6 +21,7 @@
 
 vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@it.morinsq.su:443?type=tcp&security=reality&fp=qq&sni=it.morinsq.su&pbk=D3qByJ6qqJd5phYkfAtJpBqAhSb8VHPax1ZhvI3ZKEE&sid=96e380212691bba8&spx=/#🇪🇺 Автовыбор VPN - 10 Гбит ⚡️
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@gb.volnalink.uk:2083?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#🇪🇺 Автовыбор 2 VPN - 10 Гбит ⚡️
+vless://47d9b534-8a0a-4bd2-90f1-1d6ade14427e@150.241.101.80:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=yandex.net&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2#🇪🇺 Для Wi-Fi ⚡️
 vless://d07bd879-303d-437a-bdab-573c1d114980@194.55.235.174:3560?flow=xtls-rprx-vision&type=tcp&security=reality&fp=random&sni=ya.ru&pbk=CQE7toBYdrpPcFYLJRgmsr0P3oaL7K6g1NpppDvq-ys#🇩🇪 Германия VPN - 10 Гбит ⚡️
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@tor.volnalink.uk:2083?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#🇩🇪 Германия 2 VPN - 10 Гбит ⚡️
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@144.31.1.41:2083?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#🇳🇴 Норвегия VPN - 10 Гбит ⚡️
@@ -32,7 +33,12 @@ vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@144.31.128.140:2083?flow=xtls-rprx-
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@144.31.128.160:2083?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#%F0%9F%87%BA%F0%9F%87%B8%20%20%D0%A1%D0%A8%D0%90%20VPN%20-%2010%20%D0%93%D0%B1%D0%B8%D1%82%20%E2%9A%A1
 vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@it.morinsq.su:443?type=tcp&headerType=none&security=reality&fp=qq&sni=it.morinsq.su&pbk=D3qByJ6qqJd5phYkfAtJpBqAhSb8VHPax1ZhvI3ZKEE&sid=96e380212691bba8&spx=/#🇮🇹 Италия VPN - 10 Гбит ⚡️ 
 vless://0036ae55-1684-4ebc-a52c-32f1fcf0e044@66.81.247.238:8880?type=ws&security=none&sni=66.81.247.238&path=/cdn/assets/stream&host=cnd.france.myfilecdn.com#🇫🇷 Франция VPN - 10 Гбит ⚡️
+vless://0036ae55-1684-4ebc-a52c-32f1fcf0e044@8.47.69.0:8880?type=ws&security=none&sni=8.47.69.0&path=/cdn/assets/stream&host=cnd.france2.gg.newwaycdn.com#🇫🇷 Для TikTok ⚡️
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@y.volnalink.uk:6666?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=drive.yandex.ru&pbk=n7SozQLXoCxDya7vBJwS5ebj39r4KCUZrfsnBfcCLGs&sid=ee65bc721c91#🇪🇺 AUTO — Обход белых списков 
 vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@95.163.232.54:8443?type=tcp&security=reality&fp=firefox&sni=max.ru&pbk=M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do&sid=a48d397391861a3c#🇪🇺 Обход белых списков #1
 vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@79.174.93.202:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=max.ru&pbk=s3DBlh5fMi4ykEZPRv4kq806W9sqiITthW5rlueic10&sid=f4027ed0947859d3#🇪🇺 Обход белых списков #2
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@sw.volnalink.uk:2083?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#🇪🇺 Обход белых списков #3
+vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@194.87.239.151:443?type=tcp&security=reality&fp=chrome&sni=ads.x5.ru&pbk=BaP3L3XBH6b6pjtFe0j6Sw4xrX9MZh6UoCEQCpjPu3E&sid=ec7a0cc23eb542ff#🇪🇺 Обход белых списков #4
+vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@194.87.239.151:443?type=tcp&security=reality&fp=chrome&sni=ads.x5.ru&pbk=BaP3L3XBH6b6pjtFe0j6Sw4xrX9MZh6UoCEQCpjPu3E&sid=ec7a0cc23eb542ff#🇪🇺 Обход белых списков #5
+vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@194.87.239.151:8443?type=tcp&security=reality&fp=qq&sni=max.ru&pbk=BaP3L3XBH6b6pjtFe0j6Sw4xrX9MZh6UoCEQCpjPu3E&sid=ec7a0cc23eb542ff#🇪🇺 Обход белых списков #6
+vless://d8e7d61c-d13e-4d5d-a472-b922e90c645c@194.87.239.151:8443?type=tcp&security=reality&fp=qq&sni=max.ru&pbk=BaP3L3XBH6b6pjtFe0j6Sw4xrX9MZh6UoCEQCpjPu3E&sid=ec7a0cc23eb542ff#🇪🇺 Обход белых списков #7
