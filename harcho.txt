@@ -19,6 +19,7 @@
 
 #announce:Статус подписки: ✅ Активна | 📲 Создатель +7963599412 | Телеграм канал с новостями @harchovpn | Перепродажу ключа делаю харамом ❗️
 
+vless://e01c0edf-04a0-4991-a970-f58e712d4063@ru.pool-c.netcenter-cdn.com:44003?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=pool-c.pools.netcenter-cdn.com&pbk=mCtDwMr9u9MdztUGzCGADj-nfHv6CQpAf_ywbyKl8ww&sid=5dd3388b52296b89&spx=/#1
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@144.31.128.108:2083?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#🇪🇺 Автовыбор VPN - 10 Гбит ⚡️
 vless://9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0@gb.volnalink.uk:2083?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=www.booking.com&pbk=a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA&sid=b4#🇪🇺 Автовыбор 2 VPN - 10 Гбит ⚡️
 vless://47d9b534-8a0a-4bd2-90f1-1d6ade14427e@150.241.101.80:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=yandex.net&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2#🇪🇺 Для Wi-Fi ⚡️
