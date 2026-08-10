@@ -1,0 +1,24 @@
+#profile-title: base64:SGFyY2hvIEZyZWU=
+#profile-update-interval: 1
+#subscription-userinfo: upload=29; download=12; total=10737418240000000; expire=25462495310
+#support-url: https://wa.me/79635990412
+
+#profile-test-interval: 300
+
+#profile-auto-switch: true
+
+#profile-allow-copy: false
+
+#profile-locked: true
+
+#profile-read-only: true
+
+#profile-prefer-ipv4: true
+
+#auto-continue: true
+
+#announce:Приобрести премиум подписку +79635990412
+
+vless://47d9b534-8a0a-4bd2-90f1-1d6ade14427e@64.188.98.148:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=yandex.net&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2#🇩🇪 Германия
+vless://47d9b534-8a0a-4bd2-90f1-1d6ade14427e@150.241.101.80:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=yandex.net&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2#🇪🇪 Эстония
+vless://47d9b534-8a0a-4bd2-90f1-1d6ade14427e@193.23.202.149:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=yandex.net&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2#🇳🇱 Нидерланды
