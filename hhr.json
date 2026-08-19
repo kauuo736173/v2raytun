@@ -1,5 +1,5 @@
 {
-  "remarks": "Harcho VPN / Автовыбор ⚡️",
+  "remarks": "𝐀𝐬𝐤𝐡𝐚𝐛 𝐕𝐏𝐍 / Автовыбор ⚡️",
   "dns": {
     "servers": ["1.1.1.1", "8.8.8.8"],
     "queryStrategy": "UseIPv4"
