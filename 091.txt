@@ -6,7 +6,7 @@
       "1.0.0.1"
     ]
   },
-  "inbounds" : [
+  "inbounds" : 
     {
       "listen" : "127.0.0.1",
       "port" : 10808,
