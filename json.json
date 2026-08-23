@@ -1,0 +1,1096 @@
+{
+  "log": {
+    "access": "none",
+    "loglevel": "none",
+    "error": "/private/var/mobile/Containers/Shared/AppGroup/334D6F8F-E1EE-4CE3-83B3-4314FD95C2F2/logs/xray.log"
+  },
+  "dns": {
+    "tag": "dns-in",
+    "queryStrategy": "UseIPv4",
+    "disableCache": false,
+    "enableParallelQuery": false,
+    "useSystemHosts": false,
+    "serveStale": true,
+    "serveExpiredTTL": 300,
+    "hosts": {
+      "common.dot.dns.yandex.net": ["77.88.8.1", "77.88.8.8"],
+      "dns.google": ["8.8.8.8", "8.8.4.4"]
+    },
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      {
+        "address": "https://dns.google/dns-query",
+        "timeoutMs": 500
+      },
+      {
+        "address": "https://dns.cloudflare.com/dns-query",
+        "timeoutMs": 500
+      },
+      {
+        "address": "https+local://common.dot.dns.yandex.net/dns-query",
+        "domains": [
+          "full:dns.cloudflare.com",
+          "domain:blanesik.space",
+          "domain:vhub.pro",
+          "domain:vhubtest.ru",
+          "domain:vpnhub.shop",
+          "domain:fwqfw783rg2dad.website",
+          "domain:tyr-agentstvo.tech"
+        ],
+        "skipFallback": true,
+        "timeoutMs": 500
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "sniffing": {
+        "destOverride": ["http", "tls", "quic"],
+        "enabled": true,
+        "routeOnly": true
+      },
+      "tag": "mixed-in"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10809,
+      "protocol": "http",
+      "settings": {
+        "allowTransparent": false
+      },
+      "sniffing": {
+        "destOverride": ["http", "tls", "quic"],
+        "enabled": true,
+        "routeOnly": false
+      },
+      "tag": "http-in"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy-1",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "no.cnd.sweden.mediasync-api.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "0036ae55-1684-4ebc-a52c-32f1fcf0e044",
+                "level": 8,
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "tradingview.com",
+          "fingerprint": "qq",
+          "spiderX": "/",
+          "publicKey": "CetY_ReGID1LBH275yWlxxOctI82PtgxR-fjYSRTKzM",
+          "shortId": "8a2b3c4d5e6f7012",
+          "show": false
+        }
+      }
+    },
+    {
+      "tag": "proxy-2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "no.cnd.sweden.myfilecdn.com",
+            "port": 8443,
+            "users": [
+              {
+                "id": "0036ae55-1684-4ebc-a52c-32f1fcf0e044",
+                "level": 8,
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "tradingview.com",
+          "fingerprint": "qq",
+          "spiderX": "/",
+          "publicKey": "Mtxg55aMIl1CM0Loij4hL7SONtfB8nO-jSD0Z0H5Ilo",
+          "shortId": "f1e2d3c4b5a69788",
+          "show": false
+        },
+        "xhttpSettings": {
+          "mode": "stream-one",
+          "path": "/download"
+        }
+      }
+    },
+    {
+      "tag": "proxy-3",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "66.81.247.52",
+            "port": 8880,
+            "users": [
+              {
+                "id": "0036ae55-1684-4ebc-a52c-32f1fcf0e044",
+                "level": 8,
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "headers": {
+            "Host": "cnd.estonia.mediasync-api.com"
+          },
+          "path": "/cdn/assets/stream"
+        }
+      }
+    },
+    {
+      "tag": "proxy",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "144.31.170.231",
+            "port": 8443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-5",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "87.121.86.87",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-6",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "194.107.126.162",
+            "port": 8443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-7",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.85.245.165",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-8",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.85.242.89",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-9",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "2.26.88.128",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-10",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "144.31.170.74",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-11",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "94.156.180.25",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-12",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.85.245.175",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-13",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.85.245.137",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-14",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.85.243.240",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-15",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "78.17.12.242",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-16",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "89.125.26.13",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-17",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "78.17.67.206",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-18",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "78.17.39.165",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-19",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "87.121.86.19",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-20",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "64.188.82.141",
+            "port": 8443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-21",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "78.17.55.118",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-22",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "78.17.1.161",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-23",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "78.17.67.45",
+            "port": 8443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cloudflare.fwqfw783rg2dad.website",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "cloudflare.fwqfw783rg2dad.website",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "cloudflare.fwqfw783rg2dad.website"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-24",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "195.123.212.30.blanesik.space",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "195.123.212.30.blanesik.space",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "195.123.212.30.blanesik.space",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "195.123.212.30.blanesik.space"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-25",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "64.188.77.176.vhub.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "64.188.77.176.vhub.pro",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "64.188.77.176.vhub.pro",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "64.188.77.176.vhub.pro"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-26",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "31.76.66.248.blanesik.space",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "31.76.66.248.blanesik.space",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "31.76.66.248.blanesik.space",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "31.76.66.248.blanesik.space"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-27",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "13.143.130.159.blanesik.space",
+            "port": 443,
+            "users": [
+              {
+                "id": "310a32b3-984c-4a21-a5cc-2437bb3671a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "13.143.130.159.blanesik.space",
+          "fingerprint": "firefox",
+          "alpn": ["http/1.1"]
+        },
+        "wsSettings": {
+          "host": "13.143.130.159.blanesik.space",
+          "path": "/websocket?ed=2560",
+          "headers": {
+            "Host": "13.143.130.159.blanesik.space"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-28",
+      "mux": {
+        "concurrency": 16,
+        "enabled": true
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "94.183.157.35",
