@@ -4,7 +4,7 @@
     "servers" : [
       {
         "address" : "77.88.8.8",
-        "domains" : [
+        "domain" : [
           "domain:mail.ru",
           "domain:mradx.net",
           "domain:imgsmail.ru",
